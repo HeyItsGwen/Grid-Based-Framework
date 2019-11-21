@@ -1,0 +1,24 @@
+/* BASIC RESET */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* NAV */
+/* MAIN */
+/* FOOTER */
+/*# sourceMappingURL=style.css.map */
