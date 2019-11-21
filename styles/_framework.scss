@@ -1,0 +1,36 @@
+@import './mixins';
+
+/* GRID SYSTEM PLAN */
+
+/*
+
+flex class: display: flex
+
+Rows: that contain the colums: flex, flex-direction: row, 100% width, margin left/right: 5%
+
+cols: 1-12 for sm md lg
+
+*/
+
+/* FLEX */
+
+.makeFlex {
+  @include flex;
+}
+
+/* ROWS */
+
+.row {
+  @include flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto 5%;
+}
+
+/* COLUMNS */
+
+/* SMALL */
+
+/* MEDIUM */
+
+/* LARGE */
