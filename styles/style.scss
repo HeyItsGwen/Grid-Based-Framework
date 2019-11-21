@@ -11,6 +11,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 
@@ -25,15 +30,78 @@ list-style-type: none;
 
 /* NAV */
 nav {
+
+  padding: 0 20px;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 0 168px;
+  }
+
   div {
     background-color: rgb(11, 79, 102);
-    height: 100vh;
-    min-height: 500px;
+    height: 50px;
+    border: 1px solid black;
   }
 }
 
 /* MAIN */
 
+main {
+  div {
+    #topInfo {
+      background-color: orange;
+      border: 1px solid black;
+      height: 200px;
+      padding: 0 20px;
+    }
+  }
 
+  #hero {
+    margin: 0;
+    width: 100%;
+
+    div {
+      padding: 0;
+    }
+  }
+
+  #howItWorks {
+    
+    div {
+      height: 200px;
+      background-color: cyan;
+    }
+  }
+
+  #howItWorksImages {
+
+    div {
+      height: 600px;
+      max-width: 1024px;
+      background-color: black;
+      justify-content: space-around;
+      margin: 0;
+
+      @media only screen and (max-width: 720px) {
+        flex-direction: column;
+        align-items: space-around;
+      }
+
+      div {
+        background-color: white;
+      }
+
+      .howItWorksImages {
+        flex-direction: column;
+        height: 345px;
+        border: 1px solid black;
+
+        @media only screen and (min-width: 720px) {
+          height: 458px;
+        }
+      }
+    }
+  }
+}
 
 /* FOOTER */
