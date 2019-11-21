@@ -264,7 +264,7 @@ nav div {
 }
 
 /* MAIN */
-main div #topInfo {
+main div #insideTopInfo {
   background-color: orange;
   border: 1px solid black;
   height: 200px;
@@ -323,6 +323,81 @@ main #howItWorksImages div .howItWorksImages {
   main #howItWorksImages div .howItWorksImages {
     height: 458px;
   }
+}
+
+main #everythingUN2K {
+  background-color: green;
+}
+
+main #everythingUN2K div div {
+  background-color: lightgreen;
+  max-width: 950px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+@media only screen and (min-width: 720px) {
+  main #everythingUN2K div div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+main #everythingUN2K div div .classImgs {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 270px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 720px) {
+  main #everythingUN2K div div .classImgs {
+    width: 254px;
+    margin: 0;
+  }
+}
+
+main #succesStories {
+  background-color: pink;
+}
+
+main #succesStories .insideSuccess {
+  max-width: 950px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  background-color: lightpink;
+}
+
+main #succesStories .insideSuccess .successContainer img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main #succesStories .insideSuccess .successContainer .innerSuccess {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main #startLearning {
+  background-color: royalblue;
+}
+
+main #startLearning div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* FOOTER */

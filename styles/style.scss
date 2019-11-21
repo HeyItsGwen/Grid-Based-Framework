@@ -48,7 +48,7 @@ nav {
 
 main {
   div {
-    #topInfo {
+    #insideTopInfo {
       background-color: orange;
       border: 1px solid black;
       height: 200px;
@@ -100,6 +100,56 @@ main {
           height: 458px;
         }
       }
+    }
+  }
+
+  #everythingUN2K {
+    background-color: green;
+    div {
+      div {
+        background-color: lightgreen;
+        @include innerMaxWidth;  
+
+        @media only screen and (min-width:720px) {
+          justify-content: space-around;
+        }
+
+        .classImgs {
+          flex-direction: column;
+          width: 270px;
+          margin: auto;
+
+          @media only screen and (min-width:720px) {
+            width: 254px;
+            margin: 0;
+          }
+
+        }
+      }
+    }
+  }
+
+  #succesStories {
+    background-color: pink;
+    .insideSuccess {
+      @include innerMaxWidth;
+      background-color: lightpink;
+      .successContainer {
+        img {
+          align-self: flex-start;
+        }
+        .innerSuccess {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+
+  #startLearning {
+    background-color: royalblue;
+    div {
+      flex-direction: column;
     }
   }
 }

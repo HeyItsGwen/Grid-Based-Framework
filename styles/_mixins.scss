@@ -63,3 +63,10 @@
 @mixin col-lg-pad {
   padding: 0 15px;
 }
+
+@mixin innerMaxWidth {
+  max-width: 950px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: auto;
+}
