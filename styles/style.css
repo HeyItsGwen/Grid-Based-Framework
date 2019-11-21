@@ -115,6 +115,30 @@ cols: 1-12 for sm md lg
   padding: 0 5px;
 }
 
+.hide-sm {
+  position: absolute;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 720px) {
+  .hide-sm {
+    position: static;
+    visibility: visible;
+  }
+}
+
+.hide-md {
+  position: absolute;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hide-md {
+    position: static;
+    visibility: visible;
+  }
+}
+
 /* MEDIUM */
 @media only screen and (min-width: 720px) {
   .col-md-1 {

@@ -105,6 +105,20 @@ cols: 1-12 for sm md lg
   @include col-sm-pad;
 }
 
+.hide-sm {
+  @include hide;
+  @media only screen and (min-width: 720px) {
+    @include show;
+  }
+}
+
+.hide-md {
+  @include hide;
+  @media only screen and (min-width: 1024px) {
+    @include show;
+  }
+}
+
 
 /* MEDIUM */
 @media only screen and (min-width: 720px) {
