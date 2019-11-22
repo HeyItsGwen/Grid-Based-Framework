@@ -398,6 +398,37 @@ main #succesStories .insideSuccess {
   background-color: lightpink;
 }
 
+main #succesStories .insideSuccess .successContainer:nth-child(1) .successImg {
+  background-image: url("../images/robPando.jpg");
+  background-position: center left;
+  background-size: contain;
+}
+
+main #succesStories .insideSuccess .successContainer:nth-child(2) .successImg {
+  background-image: url("../images/olivia.png");
+  background-position: center left;
+  background-size: contain;
+}
+
+main #succesStories .insideSuccess .successContainer:nth-child(3) .successImg {
+  background-image: url("../images/codyLloyd.jpg");
+  background-position: center left;
+  background-size: contain;
+}
+
+main #succesStories .insideSuccess .successContainer:nth-child(4) .successImg {
+  background-image: url("../images/williamKennedy.jpg");
+  background-position: center left;
+  background-size: contain;
+}
+
+main #succesStories .insideSuccess .successContainer .successImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
 main #succesStories .insideSuccess .successContainer img {
   -ms-flex-item-align: start;
       align-self: flex-start;
