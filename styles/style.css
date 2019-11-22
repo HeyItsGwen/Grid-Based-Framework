@@ -705,21 +705,20 @@ main #succesStories .insideSuccess .successContainer .innerSuccess p {
   color: rgba(74, 74, 74, 0.7);
 }
 
+footer .row #footerLinks div a {
+  font-weight: bold;
+  color: rgba(74, 74, 74, 0.7);
+}
+
 main #succesStories .insideSuccess .successContainer a {
   font-size: 1.1em;
   margin-bottom: 15px;
   color: #ce973e;
 }
 
-footer .row #footerLinks div a {
-  font-weight: bold;
-  color: rgba(74, 74, 74, 0.7);
-}
-
 footer .row #footerLinks div a:hover {
   color: black;
 }
-
 
 footer .row #footerLinks div a:nth-child(3) {
   height: 10px;
