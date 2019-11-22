@@ -7,10 +7,8 @@ files:
     - 'normalize.css'
     - 'reboot.css'
     - 'reset.css'
-    - '_framework.scss'
-    - '_mixins.scss'
-    - '_variables.scss'
-    - 'style.css.map'
-    
+    - '*.scss'
+    - '*.map'
+
 fixers:
   enable: true
