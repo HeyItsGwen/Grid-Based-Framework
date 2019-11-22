@@ -58,12 +58,8 @@ hide-sm will hide an element at anything below 720px, and reveal them above 720p
 
 ## Technologies
 
-content
 
 ## Acknowledgements 
 
-content
 
 ## About Us
-
-content
