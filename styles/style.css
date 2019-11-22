@@ -1,5 +1,4 @@
 /* GRID SYSTEM PLAN */
-
 /*
 
 flex class: display: flex
@@ -9,18 +8,17 @@ Rows: that contain the colums: flex, flex-direction: row, 100% width, margin lef
 cols: 1-12 for sm md lg
 
 */
-
 /* FLEX */
 .makeFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* ROWS */
@@ -29,15 +27,15 @@ cols: 1-12 for sm md lg
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 96%;
   margin: auto 2%;
 }
@@ -56,7 +54,6 @@ cols: 1-12 for sm md lg
 }
 
 /* COLUMNS */
-
 /* SMALL */
 .col-sm-1 {
   width: 8.33%;
@@ -148,57 +145,46 @@ cols: 1-12 for sm md lg
     width: 8.33%;
     padding: 0 10px;
   }
-
   .col-md-2 {
     width: 16.66%;
     padding: 0 10px;
   }
-
   .col-md-3 {
     width: 24.99%;
     padding: 0 10px;
   }
-
   .col-md-4 {
     width: 33.32%;
     padding: 0 10px;
   }
-
   .col-md-5 {
     width: 41.65%;
     padding: 0 10px;
   }
-
   .col-md-6 {
     width: 49.98%;
     padding: 0 10px;
   }
-
   .col-md-7 {
     width: 58.31%;
     padding: 0 10px;
   }
-
   .col-md-8 {
     width: 66.64%;
     padding: 0 10px;
   }
-
   .col-md-9 {
     width: 74.97%;
     padding: 0 10px;
   }
-
   .col-md-10 {
     width: 83.3%;
     padding: 0 10px;
   }
-
   .col-md-11 {
     width: 91.63%;
     padding: 0 10px;
   }
-
   .col-md-12 {
     width: 99.96%;
     padding: 0 10px;
@@ -211,57 +197,46 @@ cols: 1-12 for sm md lg
     width: 8.33%;
     padding: 0 15px;
   }
-
   .col-lg-2 {
     width: 16.66%;
     padding: 0 15px;
   }
-
   .col-lg-3 {
     width: 24.99%;
     padding: 0 15px;
   }
-
   .col-lg-4 {
     width: 33.32%;
     padding: 0 15px;
   }
-
   .col-lg-5 {
     width: 41.65%;
     padding: 0 15px;
   }
-
   .col-lg-6 {
     width: 49.98%;
     padding: 0 15px;
   }
-
   .col-lg-7 {
     width: 58.31%;
     padding: 0 15px;
   }
-
   .col-lg-8 {
     width: 66.64%;
     padding: 0 15px;
   }
-
   .col-lg-9 {
     width: 74.97%;
     padding: 0 15px;
   }
-
   .col-lg-10 {
     width: 83.3%;
     padding: 0 15px;
   }
-
   .col-lg-11 {
     width: 91.63%;
     padding: 0 15px;
   }
-
   .col-lg-12 {
     width: 99.96%;
     padding: 0 15px;
@@ -275,12 +250,13 @@ cols: 1-12 for sm md lg
   margin: 0;
   text-align: center;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -323,7 +299,7 @@ nav #navRight #linkList ul {
   width: 100%;
   height: 100%;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 nav #navRight #linkList ul li {
@@ -347,9 +323,7 @@ nav #navRight #linkList ul li:nth-child(4)::after {
   margin-left: 15px;
 }
 
-nav #navRight #linkList ul li:nth-child(4),
-nav #navRight #linkList ul li:nth-child(5),
-nav #navRight #linkList ul li:nth-child(6) {
+nav #navRight #linkList ul li:nth-child(4), nav #navRight #linkList ul li:nth-child(5), nav #navRight #linkList ul li:nth-child(6) {
   min-width: 70px;
 }
 
@@ -364,8 +338,8 @@ nav #navRight #burgerIcon {
   position: relative;
   top: 10px;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 @media only screen and (min-width: 720px) {
@@ -391,15 +365,6 @@ main div #insideTopInfo h1 {
   margin-bottom: 30px;
 }
 
-main #howWorks p {
-  margin-top: 50px;
-  max-width: 720px;
-  width: 540px;
-  line-height: 35px;
-  font-size: 1.1em;
-  color: rgba(74, 74, 74, 0.7);
-}
-
 main div #insideTopInfo p {
   line-height: 35px;
   font-size: 1.1em;
@@ -416,23 +381,8 @@ main div #insideTopInfo button {
   font-weight: bold;
   font-size: 1.15em;
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-  box-shadow: #a7a7a7 2px 2px 3px;
+          box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
-}
-
-main #everythingUN2K div button {
-  padding: 16px 56px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.15em;
-  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-  box-shadow: #a7a7a7 2px 2px 3px;
-  margin-bottom: 80px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #ce973e;
 }
 
 main div #insideTopInfo button:hover {
@@ -453,12 +403,21 @@ main #howWorks {
   margin-bottom: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main #howWorks h2 {
   color: #4a4a4a;
+}
+
+main #howWorks p {
+  margin-top: 50px;
+  max-width: 720px;
+  width: 540px;
+  line-height: 35px;
+  font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
 }
 
 main #howItWorksImages {
@@ -468,7 +427,7 @@ main #howItWorksImages {
 main #howItWorksImages div {
   max-width: 1024px;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   margin: 0;
 }
 
@@ -476,20 +435,20 @@ main #howItWorksImages div {
   main #howItWorksImages div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 main #howItWorksImages div .howItWorksImages {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 345px;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 main #howItWorksImages div .howItWorksImages img {
@@ -506,12 +465,6 @@ main #howItWorksImages div .howItWorksImages h4 {
   margin-top: 50px;
   color: #4a4a4a;
   font-size: 1.2em;
-}
-
-main #startLearning div p {
-  margin: 80px auto 50px auto;
-  color: rgba(74, 74, 74, 0.7);
-  font-size: 2.2em;
 }
 
 main #howItWorksImages div .howItWorksImages p {
@@ -539,43 +492,46 @@ main #everythingUN2K {
   background-color: #f3f3f3;
 }
 
-main #succesStories h2 {
-  color: #4a4a4a;
-  margin: 70px auto;
-}
-
 main #everythingUN2K div h2 {
   margin-top: 80px;
   margin-bottom: 30px;
   color: #4a4a4a;
 }
 
+main #everythingUN2K div button {
+  padding: 16px 56px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.15em;
+  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
+          box-shadow: #a7a7a7 2px 2px 3px;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ce973e;
+}
+
 main #everythingUN2K div button:hover {
   background-color: #dab782;
 }
 
-main #startLearning div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 main #everythingUN2K div div {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   height: 1653px;
   max-width: 950px;
   width: 100%;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
 }
 
 @media only screen and (min-width: 720px) {
   main #everythingUN2K div div {
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
 }
 
@@ -594,8 +550,8 @@ main #everythingUN2K div div {
 main #everythingUN2K div div .classImgs {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 270px;
   height: 150px;
   margin: auto;
@@ -638,27 +594,22 @@ main #succesStories {
   background-image: linear-gradient(white, #f1f1f1);
 }
 
+main #succesStories h2 {
+  color: #4a4a4a;
+  margin: 70px auto;
+}
+
 main #succesStories .insideSuccess {
   max-width: 950px;
   width: 100%;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
 }
 
 main #succesStories .insideSuccess .successContainer {
   max-width: 600px;
   margin-bottom: 30px;
-}
-
-main #succesStories .insideSuccess .successContainer .successImg {
-  height: 50px;
-  min-width: 50px;
-  border-radius: 100px;
-  overflow: hidden;
-  margin-right: 15px;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
 }
 
 main #succesStories .insideSuccess .successContainer:nth-child(1) .successImg {
@@ -689,24 +640,29 @@ main #succesStories .insideSuccess .successContainer:nth-child(4) .successImg {
   background-size: contain;
 }
 
+main #succesStories .insideSuccess .successContainer .successImg {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-right: 15px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 main #succesStories .insideSuccess .successContainer .innerSuccess {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 main #succesStories .insideSuccess .successContainer .innerSuccess p {
   line-height: 35px;
   font-size: 1.1em;
-  color: rgba(74, 74, 74, 0.7);
-}
-
-footer .row #footerLinks div a {
-  font-weight: bold;
   color: rgba(74, 74, 74, 0.7);
 }
 
@@ -716,20 +672,19 @@ main #succesStories .insideSuccess .successContainer a {
   color: #ce973e;
 }
 
-footer .row #footerLinks div a:hover {
-  color: black;
-}
-
-footer .row #footerLinks div a:nth-child(3) {
-  height: 10px;
-}
-
 main #succesStories .insideSuccess .successContainer a:hover {
   color: black;
 }
 
 main #startLearning {
   background-color: #f1f1f1;
+}
+
+main #startLearning div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main #startLearning div .blueButton {
@@ -741,12 +696,18 @@ main #startLearning div .blueButton {
   font-weight: bold;
   font-size: 1.15em;
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-  box-shadow: #a7a7a7 2px 2px 3px;
+          box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
 }
 
 main #startLearning div .blueButton:hover {
   background-color: #85c9cc;
+}
+
+main #startLearning div p {
+  margin: 80px auto 50px auto;
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 2.2em;
 }
 
 main #successLink {
@@ -781,7 +742,7 @@ footer .row {
 
 footer .row #icons {
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 @media only screen and (max-width: 720px) {
@@ -801,12 +762,25 @@ footer .row #footerLinks div {
   width: 50%;
   height: 100%;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px 0;
+}
+
+footer .row #footerLinks div a {
+  font-weight: bold;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+footer .row #footerLinks div a:hover {
+  color: black;
+}
+
+footer .row #footerLinks div a:nth-child(3) {
+  height: 10px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -821,3 +795,4 @@ footer .row #footerLinks div {
     padding: 75px 0;
   }
 }
+/*# sourceMappingURL=style.css.map */
