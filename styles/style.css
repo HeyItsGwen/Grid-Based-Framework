@@ -391,6 +391,15 @@ main div #insideTopInfo h1 {
   margin-bottom: 30px;
 }
 
+main #howWorks p {
+  margin-top: 50px;
+  max-width: 720px;
+  width: 540px;
+  line-height: 35px;
+  font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
+}
+
 main div #insideTopInfo p {
   line-height: 35px;
   font-size: 1.1em;
@@ -409,6 +418,21 @@ main div #insideTopInfo button {
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
   box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
+}
+
+main #everythingUN2K div button {
+  padding: 16px 56px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.15em;
+  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
+  box-shadow: #a7a7a7 2px 2px 3px;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ce973e;
 }
 
 main div #insideTopInfo button:hover {
@@ -435,15 +459,6 @@ main #howWorks {
 
 main #howWorks h2 {
   color: #4a4a4a;
-}
-
-main #howWorks p {
-  margin-top: 50px;
-  max-width: 720px;
-  width: 540px;
-  line-height: 35px;
-  font-size: 1.1em;
-  color: rgba(74, 74, 74, 0.7);
 }
 
 main #howItWorksImages {
@@ -493,6 +508,12 @@ main #howItWorksImages div .howItWorksImages h4 {
   font-size: 1.2em;
 }
 
+main #startLearning div p {
+  margin: 80px auto 50px auto;
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 2.2em;
+}
+
 main #howItWorksImages div .howItWorksImages p {
   line-height: 35px;
   font-size: 1.1em;
@@ -518,29 +539,26 @@ main #everythingUN2K {
   background-color: #f3f3f3;
 }
 
+main #succesStories h2 {
+  color: #4a4a4a;
+  margin: 70px auto;
+}
+
 main #everythingUN2K div h2 {
   margin-top: 80px;
   margin-bottom: 30px;
   color: #4a4a4a;
 }
 
-main #everythingUN2K div button {
-  padding: 16px 56px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.15em;
-  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-  box-shadow: #a7a7a7 2px 2px 3px;
-  margin-bottom: 80px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #ce973e;
-}
-
 main #everythingUN2K div button:hover {
   background-color: #dab782;
+}
+
+main #startLearning div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main #everythingUN2K div div {
@@ -620,11 +638,6 @@ main #succesStories {
   background-image: linear-gradient(white, #f1f1f1);
 }
 
-main #succesStories h2 {
-  color: #4a4a4a;
-  margin: 70px auto;
-}
-
 main #succesStories .insideSuccess {
   max-width: 950px;
   width: 100%;
@@ -636,6 +649,16 @@ main #succesStories .insideSuccess {
 main #succesStories .insideSuccess .successContainer {
   max-width: 600px;
   margin-bottom: 30px;
+}
+
+main #succesStories .insideSuccess .successContainer .successImg {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-right: 15px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 main #succesStories .insideSuccess .successContainer:nth-child(1) .successImg {
@@ -666,16 +689,6 @@ main #succesStories .insideSuccess .successContainer:nth-child(4) .successImg {
   background-size: contain;
 }
 
-main #succesStories .insideSuccess .successContainer .successImg {
-  height: 50px;
-  min-width: 50px;
-  border-radius: 100px;
-  overflow: hidden;
-  margin-right: 15px;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
 main #succesStories .insideSuccess .successContainer .innerSuccess {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -698,19 +711,26 @@ main #succesStories .insideSuccess .successContainer a {
   color: #ce973e;
 }
 
+footer .row #footerLinks div a {
+  font-weight: bold;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+footer .row #footerLinks div a:hover {
+  color: black;
+}
+
+
+footer .row #footerLinks div a:nth-child(3) {
+  height: 10px;
+}
+
 main #succesStories .insideSuccess .successContainer a:hover {
   color: black;
 }
 
 main #startLearning {
   background-color: #f1f1f1;
-}
-
-main #startLearning div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 main #startLearning div .blueButton {
@@ -728,12 +748,6 @@ main #startLearning div .blueButton {
 
 main #startLearning div .blueButton:hover {
   background-color: #85c9cc;
-}
-
-main #startLearning div p {
-  margin: 80px auto 50px auto;
-  color: rgba(74, 74, 74, 0.7);
-  font-size: 2.2em;
 }
 
 main #successLink {
@@ -794,19 +808,6 @@ footer .row #footerLinks div {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px 0;
-}
-
-footer .row #footerLinks div a {
-  font-weight: bold;
-  color: rgba(74, 74, 74, 0.7);
-}
-
-footer .row #footerLinks div a:hover {
-  color: black;
-}
-
-footer .row #footerLinks div a:nth-child(3) {
-  height: 10px;
 }
 
 @media only screen and (max-width: 720px) {
