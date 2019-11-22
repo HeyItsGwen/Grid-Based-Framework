@@ -10,6 +10,9 @@
 
 ![screenshot image](./images/screenshot.PNG)
 
+This project was built with the objective of learning how to create a framework and then applying this newly created framework by cloning a page (in our case The Odin Project Home Page) to display the functionality of such framework.
+Our Framework was inspired by Bootstrap and built in a similar grid-row functionality.
+
 ## How It Works
 
 If you're familiar with the Bootstrap framework, this framework works in a similar way. Set a container element using the class 'row', and then set each of it's child elements classes based on the amount of rows you want at different sizes.
@@ -57,10 +60,19 @@ You can also use this framework to hide/show elements at certain viewport widths
 hide-sm will hide an element at anything below 720px, and reveal them above 720px, while hide-md will hide elements below 1024px, and reveal them above 1024px.
 
 ## Technologies
-
+The technologies used for this project were the following:
+* Sass -[Link](https://sass-lang.com/) for the Styling
+* HTML for the Index
+* Stickler and StyleLint for Css Linting-[Link](https://stickler-ci.com/)
+* VS Code
+* Github
 
 ## Acknowledgements 
-
+* Inspiration: Bootstrap [Link](https://getbootstrap.com/)
+* Home Page Clone: The Odin Project [Link](https://www.theodinproject.com/home)
+* Code References: W3 Schools [Link](https://www.w3schools.com/)
+* Code References II: Mozilla Docs [Link](https://developer.mozilla.org/en-US/)
+* Assignment Instructions: The Odin Project [Link](https://www.theodinproject.com/home)
 
 ## About Us
 
