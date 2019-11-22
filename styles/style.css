@@ -508,6 +508,12 @@ main #howItWorksImages div .howItWorksImages h4 {
   font-size: 1.2em;
 }
 
+main #startLearning div p {
+  margin: 80px auto 50px auto;
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 2.2em;
+}
+
 main #howItWorksImages div .howItWorksImages p {
   line-height: 35px;
   font-size: 1.1em;
@@ -693,15 +699,14 @@ main #succesStories .insideSuccess .successContainer .innerSuccess {
   align-items: flex-start;
 }
 
-main #startLearning div p {
-  margin: 80px auto 50px auto;
-  color: rgba(74, 74, 74, 0.7);
-  font-size: 2.2em;
-}
-
 main #succesStories .insideSuccess .successContainer .innerSuccess p {
   line-height: 35px;
   font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+footer .row #footerLinks div a {
+  font-weight: bold;
   color: rgba(74, 74, 74, 0.7);
 }
 
@@ -711,13 +716,12 @@ main #succesStories .insideSuccess .successContainer a {
   color: #ce973e;
 }
 
-footer .row #footerLinks div a {
-  font-weight: bold;
-  color: rgba(74, 74, 74, 0.7);
-}
-
 footer .row #footerLinks div a:nth-child(3) {
   height: 10px;
+}
+
+footer .row #footerLinks div a:hover {
+  color: black;
 }
 
 main #succesStories .insideSuccess .successContainer a:hover {
@@ -803,10 +807,6 @@ footer .row #footerLinks div {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px 0;
-}
-
-footer .row #footerLinks div a:hover {
-  color: black;
 }
 
 @media only screen and (max-width: 720px) {
