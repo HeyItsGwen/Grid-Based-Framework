@@ -1,5 +1,6 @@
 @import './framework';
 @import './mixins';
+@import './variables';
 
 /* BASIC RESET */
 
@@ -108,20 +109,53 @@ main {
     div {
       div {
         background-color: lightgreen;
+        justify-content: space-around;
+        height: 1653px;
+
         @include innerMaxWidth;  
 
         @media only screen and (min-width:720px) {
           justify-content: space-around;
         }
 
+        @media only screen and (min-width: 590px) {
+          height: 1277px;
+        }
+
+        @media only screen and (min-width: 810px) {
+          height: 1000px;
+        }
+
         .classImgs {
           flex-direction: column;
           width: 270px;
+          height: 150px;
           margin: auto;
+          background-color: white;
+          padding: 15px 0;
 
           @media only screen and (min-width:720px) {
             width: 254px;
             margin: 0;
+          }
+
+          @media only screen and (min-width: 590px) {
+            height: 255px;
+            width: 255px;
+          }
+
+          h4 {
+            color: $dark-grey;
+          }
+
+          img {
+            height: 80px;
+            width: 80px;
+
+            @media only screen and (min-width: 590px) {
+              height: 160px;
+              width: 160px;
+            }
           }
 
         }
@@ -130,11 +164,19 @@ main {
   }
 
   #succesStories {
-    background-color: pink;
+    background-image: linear-gradient(white, #f1f1f1);
+
+    h2 {
+      color: $dark-grey;
+      margin: 70px auto;
+    }
+
     .insideSuccess {
       @include innerMaxWidth;
-      background-color: lightpink;
+
       .successContainer {
+          max-width: 600px;
+          margin-bottom: 30px;
 
         &:nth-child(1) {
 
@@ -164,6 +206,8 @@ main {
         }
 
         &:nth-child(4) {
+
+          margin-bottom: 80px;
           
           .successImg {
             background-image: url("../images/williamKennedy.jpg");
@@ -174,25 +218,71 @@ main {
 
         .successImg {
           height: 50px;
-          width: 50px;
+          min-width: 50px;
           border-radius: 100px;
           overflow: hidden;
-        }
-        img {
+          margin-right: 15px;
           align-self: flex-start;
         }
+
         .innerSuccess {
           flex-direction: column;
           align-items: flex-start;
+
+          p {
+            line-height: 35px;
+            font-size: 1.1em;
+            color: $light-grey;
+          }
+        }
+
+        a {
+          font-size: 1.1em;
+          margin-bottom: 15px;
+          color: $orange;
+
+          &:hover {
+            color: black;
+          }
         }
       }
     }
+
   }
 
-  #startLearning {
-    background-color: royalblue;
-    div {
-      flex-direction: column;
+#startLearning {
+  background-color: #f1f1f1;
+
+  div {
+    flex-direction: column;
+
+    .blueButton {
+      background-color: $light-blue;
+      height: 56px;
+      width: 176px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.15em;
+      box-shadow: rgb(167, 167, 167) 2px 2px 3px;
+      margin-bottom: 80px;
+    }
+
+    p {
+      margin: 80px auto 50px auto;
+      color: $light-grey;
+      font-size: 2.2em;
+    }
+  }
+}
+
+  #successLink {
+    color: $light-grey;
+    text-decoration: underline;
+
+    &:hover {
+      color: black;
     }
   }
 }
@@ -236,6 +326,15 @@ footer {
         justify-content: space-around;
         flex-direction: column;
         padding: 20px 0;
+
+        a {
+          font-weight: bold;
+          color: $light-grey;
+
+          &:hover {
+            color: black;
+          }
+        }
 
         & a:nth-child(3) {
           height: 10px;

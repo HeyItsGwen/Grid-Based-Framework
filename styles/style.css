@@ -355,6 +355,9 @@ main #everythingUN2K {
 
 main #everythingUN2K div div {
   background-color: lightgreen;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 1653px;
   max-width: 950px;
   width: 100%;
   -ms-flex-wrap: wrap;
@@ -369,13 +372,28 @@ main #everythingUN2K div div {
   }
 }
 
+@media only screen and (min-width: 590px) {
+  main #everythingUN2K div div {
+    height: 1277px;
+  }
+}
+
+@media only screen and (min-width: 810px) {
+  main #everythingUN2K div div {
+    height: 1000px;
+  }
+}
+
 main #everythingUN2K div div .classImgs {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 270px;
+  height: 150px;
   margin: auto;
+  background-color: white;
+  padding: 15px 0;
 }
 
 @media only screen and (min-width: 720px) {
@@ -385,8 +403,37 @@ main #everythingUN2K div div .classImgs {
   }
 }
 
+@media only screen and (min-width: 590px) {
+  main #everythingUN2K div div .classImgs {
+    height: 255px;
+    width: 255px;
+  }
+}
+
+main #everythingUN2K div div .classImgs h4 {
+  color: #4a4a4a;
+}
+
+main #everythingUN2K div div .classImgs img {
+  height: 80px;
+  width: 80px;
+}
+
+@media only screen and (min-width: 590px) {
+  main #everythingUN2K div div .classImgs img {
+    height: 160px;
+    width: 160px;
+  }
+}
+
 main #succesStories {
-  background-color: pink;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
+  background-image: linear-gradient(white, #f1f1f1);
+}
+
+main #succesStories h2 {
+  color: #4a4a4a;
+  margin: 70px auto;
 }
 
 main #succesStories .insideSuccess {
@@ -395,7 +442,11 @@ main #succesStories .insideSuccess {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: auto;
-  background-color: lightpink;
+}
+
+main #succesStories .insideSuccess .successContainer {
+  max-width: 600px;
+  margin-bottom: 30px;
 }
 
 main #succesStories .insideSuccess .successContainer:nth-child(1) .successImg {
@@ -416,6 +467,10 @@ main #succesStories .insideSuccess .successContainer:nth-child(3) .successImg {
   background-size: contain;
 }
 
+main #succesStories .insideSuccess .successContainer:nth-child(4) {
+  margin-bottom: 80px;
+}
+
 main #succesStories .insideSuccess .successContainer:nth-child(4) .successImg {
   background-image: url("../images/williamKennedy.jpg");
   background-position: center left;
@@ -424,12 +479,10 @@ main #succesStories .insideSuccess .successContainer:nth-child(4) .successImg {
 
 main #succesStories .insideSuccess .successContainer .successImg {
   height: 50px;
-  width: 50px;
+  min-width: 50px;
   border-radius: 100px;
   overflow: hidden;
-}
-
-main #succesStories .insideSuccess .successContainer img {
+  margin-right: 15px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -444,8 +497,24 @@ main #succesStories .insideSuccess .successContainer .innerSuccess {
           align-items: flex-start;
 }
 
+main #succesStories .insideSuccess .successContainer .innerSuccess p {
+  line-height: 35px;
+  font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+main #succesStories .insideSuccess .successContainer a {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #ce973e;
+}
+
+main #succesStories .insideSuccess .successContainer a:hover {
+  color: black;
+}
+
 main #startLearning {
-  background-color: royalblue;
+  background-color: #f1f1f1;
 }
 
 main #startLearning div {
@@ -453,6 +522,35 @@ main #startLearning div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+main #startLearning div .blueButton {
+  background-color: #6abfc3;
+  height: 56px;
+  width: 176px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.15em;
+  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
+          box-shadow: #a7a7a7 2px 2px 3px;
+  margin-bottom: 80px;
+}
+
+main #startLearning div p {
+  margin: 80px auto 50px auto;
+  color: rgba(74, 74, 74, 0.7);
+  font-size: 2.2em;
+}
+
+main #successLink {
+  color: rgba(74, 74, 74, 0.7);
+  text-decoration: underline;
+}
+
+main #successLink:hover {
+  color: black;
 }
 
 /* FOOTER */
@@ -504,6 +602,15 @@ footer .row #footerLinks div {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px 0;
+}
+
+footer .row #footerLinks div a {
+  font-weight: bold;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+footer .row #footerLinks div a:hover {
+  color: black;
 }
 
 footer .row #footerLinks div a:nth-child(3) {
