@@ -289,10 +289,42 @@ nav div {
 
 /* MAIN */
 main div #insideTopInfo {
-  background-color: orange;
-  border: 1px solid black;
-  height: 200px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
+  background-image: linear-gradient(white, #f1f1f1);
   padding: 0 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+main div #insideTopInfo h1 {
+  color: #ce973e;
+  font-weight: lighter;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+main div #insideTopInfo p {
+  line-height: 35px;
+  font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
+  margin-bottom: 60px;
+}
+
+main div #insideTopInfo button {
+  background-color: #6abfc3;
+  padding: 16px 56px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.15em;
+  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
+          box-shadow: #a7a7a7 2px 2px 3px;
+  margin-bottom: 80px;
+}
+
+main div #insideTopInfo button:hover {
+  background-color: #85c9cc;
 }
 
 main #hero {
@@ -304,13 +336,8 @@ main #hero div {
   padding: 0;
 }
 
-main #howItWorks div {
-  height: 200px;
-  background-color: cyan;
-}
-
 main #howWorks {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

@@ -50,10 +50,29 @@ nav {
 main {
   div {
     #insideTopInfo {
-      background-color: orange;
-      border: 1px solid black;
-      height: 200px;
+      @include whiteGradient;
       padding: 0 20px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+
+      h1 {
+        color: $orange;
+        font-weight: lighter;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+      }
+
+      p {
+        @include paragraph;
+        margin-bottom: 60px;
+      }
+
+      button {
+        background-color: $light-blue;
+        @include button;
+        @include blueButtonHover;
+      }
+
     }
   }
 
@@ -66,16 +85,8 @@ main {
     }
   }
 
-  #howItWorks {
-    
-    div {
-      height: 200px;
-      background-color: cyan;
-    }
-  }
-
   #howWorks {
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 80px;
     flex-direction: column;
 
@@ -218,7 +229,7 @@ main {
   }
 
   #succesStories {
-    background-image: linear-gradient(white, #f1f1f1);
+    @include whiteGradient;
 
     h2 {
       color: $dark-grey;
