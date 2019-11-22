@@ -309,10 +309,34 @@ main #howItWorks div {
   background-color: cyan;
 }
 
+main #howWorks {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #howWorks h2 {
+  color: #4a4a4a;
+}
+
+main #howWorks p {
+  margin-top: 50px;
+  max-width: 720px;
+  width: 540px;
+  line-height: 35px;
+  font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+main #howItWorksImages {
+  background-color: #ffffff;
+}
+
 main #howItWorksImages div {
-  height: 600px;
   max-width: 1024px;
-  background-color: black;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0;
@@ -330,17 +354,46 @@ main #howItWorksImages div {
   }
 }
 
-main #howItWorksImages div div {
-  background-color: white;
-}
-
 main #howItWorksImages div .howItWorksImages {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   height: 345px;
-  border: 1px solid black;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main #howItWorksImages div .howItWorksImages img {
+  height: 120px;
+}
+
+@media only screen and (min-width: 720px) {
+  main #howItWorksImages div .howItWorksImages img {
+    height: 156px;
+  }
+}
+
+main #howItWorksImages div .howItWorksImages h4 {
+  margin-top: 50px;
+  color: #4a4a4a;
+  font-size: 1.2em;
+}
+
+main #howItWorksImages div .howItWorksImages p {
+  line-height: 35px;
+  font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
+  margin-top: 30px;
+  max-width: 439px;
+}
+
+@media only screen and (max-width: 720px) {
+  main #howItWorksImages div .howItWorksImages:nth-child(2) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (min-width: 720px) {
@@ -350,11 +403,35 @@ main #howItWorksImages div .howItWorksImages {
 }
 
 main #everythingUN2K {
-  background-color: green;
+  background-color: #f3f3f3;
+}
+
+main #everythingUN2K div h2 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: #4a4a4a;
+}
+
+main #everythingUN2K div button {
+  padding: 16px 56px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.15em;
+  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
+          box-shadow: #a7a7a7 2px 2px 3px;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ce973e;
+}
+
+main #everythingUN2K div button:hover {
+  background-color: #dab782;
 }
 
 main #everythingUN2K div div {
-  background-color: lightgreen;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 1653px;
@@ -526,8 +603,7 @@ main #startLearning div {
 
 main #startLearning div .blueButton {
   background-color: #6abfc3;
-  height: 56px;
-  width: 176px;
+  padding: 16px 56px;
   border: none;
   border-radius: 5px;
   color: white;
@@ -536,6 +612,10 @@ main #startLearning div .blueButton {
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
           box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
+}
+
+main #startLearning div .blueButton:hover {
+  background-color: #85c9cc;
 }
 
 main #startLearning div p {

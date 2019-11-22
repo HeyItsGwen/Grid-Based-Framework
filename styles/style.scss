@@ -74,12 +74,27 @@ main {
     }
   }
 
-  #howItWorksImages {
+  #howWorks {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    flex-direction: column;
 
+    h2 {
+      color: $dark-grey;
+    }
+
+    p {
+      margin-top: 50px;
+      max-width: 720px;
+      width: 540px;
+      @include paragraph;
+    }
+  }
+
+  #howItWorksImages {
+    background-color: #ffffff;
     div {
-      height: 600px;
       max-width: 1024px;
-      background-color: black;
       justify-content: space-around;
       margin: 0;
 
@@ -88,14 +103,36 @@ main {
         align-items: space-around;
       }
 
-      div {
-        background-color: white;
-      }
-
       .howItWorksImages {
         flex-direction: column;
         height: 345px;
-        border: 1px solid black;
+        justify-content: flex-start;
+
+        img {
+          height: 120px;
+          @media only screen and (min-width: 720px) {
+            height: 156px;
+          }
+        }
+
+        h4 {
+          margin-top: 50px;
+          color: $dark-grey;
+          font-size: 1.2em;
+        }
+
+        p {
+          @include paragraph;
+          margin-top: 30px;
+          max-width: 439px;
+        }
+
+        &:nth-child(2) {
+          @media only screen and (max-width: 720px) {
+            margin-top: 30px;
+            margin-bottom: 50px;
+          }
+        }
 
         @media only screen and (min-width: 720px) {
           height: 458px;
@@ -105,10 +142,27 @@ main {
   }
 
   #everythingUN2K {
-    background-color: green;
+    background-color: #f3f3f3;
     div {
+
+      h2 {
+        margin-top: 80px;
+        margin-bottom: 30px;
+        color: $dark-grey;
+      }
+
+      button {
+        @include button;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: $orange;
+
+        &:hover {
+          background-color: #dab782;
+        }
+      }
+
       div {
-        background-color: lightgreen;
         justify-content: space-around;
         height: 1653px;
 
@@ -230,9 +284,7 @@ main {
           align-items: flex-start;
 
           p {
-            line-height: 35px;
-            font-size: 1.1em;
-            color: $light-grey;
+            @include paragraph;
           }
         }
 
@@ -258,15 +310,8 @@ main {
 
     .blueButton {
       background-color: $light-blue;
-      height: 56px;
-      width: 176px;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-      font-size: 1.15em;
-      box-shadow: rgb(167, 167, 167) 2px 2px 3px;
-      margin-bottom: 80px;
+      @include button;
+      @include blueButtonHover;
     }
 
     p {

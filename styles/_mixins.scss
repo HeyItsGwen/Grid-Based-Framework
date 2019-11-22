@@ -80,3 +80,26 @@
   position: static;
   visibility: visible;
 }
+
+@mixin button {
+  padding: 16px 56px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.15em;
+  box-shadow: rgb(167, 167, 167) 2px 2px 3px;
+  margin-bottom: 80px;
+}
+
+@mixin blueButtonHover {
+  &:hover {
+    background-color: #85c9cc;
+  }
+}
+
+@mixin paragraph {
+  line-height: 35px;
+  font-size: 1.1em;
+  color: $light-grey;
+}
