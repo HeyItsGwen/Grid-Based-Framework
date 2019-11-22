@@ -392,6 +392,15 @@ main div #insideTopInfo h1 {
   margin-bottom: 30px;
 }
 
+main #howWorks p {
+  margin-top: 50px;
+  max-width: 720px;
+  width: 540px;
+  line-height: 35px;
+  font-size: 1.1em;
+  color: rgba(74, 74, 74, 0.7);
+}
+
 main div #insideTopInfo p {
   line-height: 35px;
   font-size: 1.1em;
@@ -410,6 +419,21 @@ main div #insideTopInfo button {
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
   box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
+}
+
+main #everythingUN2K div button {
+  padding: 16px 56px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.15em;
+  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
+  box-shadow: #a7a7a7 2px 2px 3px;
+  margin-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ce973e;
 }
 
 main div #insideTopInfo button:hover {
@@ -435,15 +459,6 @@ main #howWorks {
 
 main #howWorks h2 {
   color: #4a4a4a;
-}
-
-main #howWorks p {
-  margin-top: 50px;
-  max-width: 720px;
-  width: 540px;
-  line-height: 35px;
-  font-size: 1.1em;
-  color: rgba(74, 74, 74, 0.7);
 }
 
 main #howItWorksImages {
@@ -518,25 +533,15 @@ main #everythingUN2K {
   background-color: #f3f3f3;
 }
 
+main #succesStories h2 {
+  color: #4a4a4a;
+  margin: 70px auto;
+}
+
 main #everythingUN2K div h2 {
   margin-top: 80px;
   margin-bottom: 30px;
   color: #4a4a4a;
-}
-
-main #everythingUN2K div button {
-  padding: 16px 56px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.15em;
-  -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-  box-shadow: #a7a7a7 2px 2px 3px;
-  margin-bottom: 80px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #ce973e;
 }
 
 main #everythingUN2K div button:hover {
@@ -618,11 +623,6 @@ main #everythingUN2K div div .classImgs img {
 main #succesStories {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
   background-image: linear-gradient(white, #f1f1f1);
-}
-
-main #succesStories h2 {
-  color: #4a4a4a;
-  margin: 70px auto;
 }
 
 main #succesStories .insideSuccess {
