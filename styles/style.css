@@ -349,8 +349,8 @@ nav #navRight #linkList ul li:nth-child(4)::after {
 }
 
 nav #navRight #linkList ul li:nth-child(4),
- nav #navRight #linkList ul li:nth-child(5),
- nav #navRight #linkList ul li:nth-child(6) {
+nav #navRight #linkList ul li:nth-child(5),
+nav #navRight #linkList ul li:nth-child(6) {
   min-width: 70px;
 }
 
