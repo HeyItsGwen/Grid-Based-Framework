@@ -26,14 +26,12 @@ a {
 }
 
 ul {
-list-style-type: none;
+  list-style-type: none;
 }
 
 /* NAV */
 nav {
-
   div {
-
     img {
       &:hover {
         cursor: pointer;
@@ -52,17 +50,16 @@ nav {
   }
 
   #navRight {
-
     #linkList {
       position: relative;
       top: 10px;
+
       ul {
         width: 100%;
         height: 100%;
         justify-content: space-around;
-      
-        li {
 
+        li {
           &:hover {
             cursor: pointer;
             color: black;
@@ -82,11 +79,14 @@ nav {
             margin-left: 15px;
           }
 
-          &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
             min-width: 70px;
           }
         }
       }
+
       @media only screen and (max-width: 720px) {
         @include hide;
       }
@@ -110,6 +110,7 @@ main {
   div {
     #insideTopInfo {
       @include whiteGradient;
+
       padding: 0 20px;
       margin-top: 80px;
       margin-bottom: 80px;
@@ -123,15 +124,16 @@ main {
 
       p {
         @include paragraph;
+
         margin-bottom: 60px;
       }
 
       button {
         background-color: $light-blue;
+
         @include button;
         @include blueButtonHover;
       }
-
     }
   }
 
@@ -157,12 +159,14 @@ main {
       margin-top: 50px;
       max-width: 720px;
       width: 540px;
+
       @include paragraph;
     }
   }
 
   #howItWorksImages {
-    background-color: #ffffff;
+    background-color: #fff;
+
     div {
       max-width: 1024px;
       justify-content: space-around;
@@ -179,6 +183,7 @@ main {
 
         img {
           height: 120px;
+
           @media only screen and (min-width: 720px) {
             height: 156px;
           }
@@ -192,6 +197,7 @@ main {
 
         p {
           @include paragraph;
+
           margin-top: 30px;
           max-width: 439px;
         }
@@ -212,8 +218,8 @@ main {
 
   #everythingUN2K {
     background-color: #f3f3f3;
-    div {
 
+    div {
       h2 {
         margin-top: 80px;
         margin-bottom: 30px;
@@ -222,6 +228,7 @@ main {
 
       button {
         @include button;
+
         padding-left: 40px;
         padding-right: 40px;
         background-color: $orange;
@@ -235,9 +242,10 @@ main {
         justify-content: space-around;
         height: 1653px;
 
-        @include innerMaxWidth;  
+        @include innerMaxWidth;
 
-        @media only screen and (min-width:720px) {
+
+        @media only screen and (min-width: 720px) {
           justify-content: space-around;
         }
 
@@ -257,7 +265,7 @@ main {
           background-color: white;
           padding: 15px 0;
 
-          @media only screen and (min-width:720px) {
+          @media only screen and (min-width: 720px) {
             width: 254px;
             margin: 0;
           }
@@ -280,7 +288,6 @@ main {
               width: 160px;
             }
           }
-
         }
       }
     }
@@ -298,11 +305,10 @@ main {
       @include innerMaxWidth;
 
       .successContainer {
-          max-width: 600px;
-          margin-bottom: 30px;
+        max-width: 600px;
+        margin-bottom: 30px;
 
         &:nth-child(1) {
-
           .successImg {
             background-image: url("../images/robPando.jpg");
             background-position: center left;
@@ -311,7 +317,6 @@ main {
         }
 
         &:nth-child(2) {
-          
           .successImg {
             background-image: url("../images/olivia.png");
             background-position: center left;
@@ -320,7 +325,6 @@ main {
         }
 
         &:nth-child(3) {
-          
           .successImg {
             background-image: url("../images/codyLloyd.jpg");
             background-position: center left;
@@ -329,9 +333,8 @@ main {
         }
 
         &:nth-child(4) {
-
           margin-bottom: 80px;
-          
+
           .successImg {
             background-image: url("../images/williamKennedy.jpg");
             background-position: center left;
@@ -368,28 +371,28 @@ main {
         }
       }
     }
-
   }
 
-#startLearning {
-  background-color: #f1f1f1;
+  #startLearning {
+    background-color: #f1f1f1;
 
-  div {
-    flex-direction: column;
+    div {
+      flex-direction: column;
 
-    .blueButton {
-      background-color: $light-blue;
-      @include button;
-      @include blueButtonHover;
-    }
+      .blueButton {
+        background-color: $light-blue;
 
-    p {
-      margin: 80px auto 50px auto;
-      color: $light-grey;
-      font-size: 2.2em;
+        @include button;
+        @include blueButtonHover;
+      }
+
+      p {
+        margin: 80px auto 50px auto;
+        color: $light-grey;
+        font-size: 2.2em;
+      }
     }
   }
-}
 
   #successLink {
     color: $light-grey;
@@ -405,7 +408,7 @@ main {
 
 footer {
   height: 70px;
-  
+
   @media only screen and (min-width: 720px) {
     height: 130px;
   }
@@ -416,7 +419,7 @@ footer {
 
   .row {
     height: 100%;
-    
+
     #icons {
       justify-content: space-around;
 
@@ -433,7 +436,6 @@ footer {
     }
 
     #footerLinks {
-
       div {
         width: 50%;
         height: 100%;

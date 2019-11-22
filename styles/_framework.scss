@@ -22,6 +22,7 @@ cols: 1-12 for sm md lg
 
 .row {
   @include flex;
+
   flex-direction: row;
   width: 96%;
   margin: auto 2%;
@@ -107,6 +108,7 @@ cols: 1-12 for sm md lg
 
 .hide-sm {
   @include hide;
+
   @media only screen and (min-width: 720px) {
     @include show;
   }
@@ -114,6 +116,7 @@ cols: 1-12 for sm md lg
 
 .hide-md {
   @include hide;
+
   @media only screen and (min-width: 1024px) {
     @include show;
   }
@@ -122,130 +125,126 @@ cols: 1-12 for sm md lg
 
 /* MEDIUM */
 @media only screen and (min-width: 720px) {
-
   .col-md-1 {
     @include width1;
     @include col-md-pad;
   }
-  
+
   .col-md-2 {
     @include width2;
     @include col-md-pad;
   }
-  
+
   .col-md-3 {
     @include width3;
     @include col-md-pad;
   }
-  
+
   .col-md-4 {
     @include width4;
     @include col-md-pad;
   }
-  
+
   .col-md-5 {
     @include width5;
     @include col-md-pad;
   }
-  
+
   .col-md-6 {
     @include width6;
     @include col-md-pad;
   }
-  
+
   .col-md-7 {
     @include width7;
     @include col-md-pad;
   }
-  
+
   .col-md-8 {
     @include width8;
     @include col-md-pad;
   }
-  
+
   .col-md-9 {
     @include width9;
     @include col-md-pad;
   }
-  
+
   .col-md-10 {
     @include width10;
     @include col-md-pad;
   }
-  
+
   .col-md-11 {
     @include width11;
     @include col-md-pad;
   }
-  
+
   .col-md-12 {
     @include width12;
     @include col-md-pad;
   }
-
 }
 
 /* LARGE */
 @media only screen and (min-width: 1024px) {
-
   .col-lg-1 {
     @include width1;
     @include col-lg-pad;
   }
-  
+
   .col-lg-2 {
     @include width2;
     @include col-lg-pad;
   }
-  
+
   .col-lg-3 {
     @include width3;
     @include col-lg-pad;
   }
-  
+
   .col-lg-4 {
     @include width4;
     @include col-lg-pad;
   }
-  
+
   .col-lg-5 {
     @include width5;
     @include col-lg-pad;
   }
-  
+
   .col-lg-6 {
     @include width6;
     @include col-lg-pad;
   }
-  
+
   .col-lg-7 {
     @include width7;
     @include col-lg-pad;
   }
-  
+
   .col-lg-8 {
     @include width8;
     @include col-lg-pad;
   }
-  
+
   .col-lg-9 {
     @include width9;
     @include col-lg-pad;
   }
-  
+
   .col-lg-10 {
     @include width10;
     @include col-lg-pad;
   }
-  
+
   .col-lg-11 {
     @include width11;
     @include col-lg-pad;
   }
-  
+
   .col-lg-12 {
     @include width12;
     @include col-lg-pad;
   }
-
 }

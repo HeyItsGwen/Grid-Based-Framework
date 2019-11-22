@@ -1,4 +1,5 @@
 /* GRID SYSTEM PLAN */
+
 /*
 
 flex class: display: flex
@@ -8,17 +9,18 @@ Rows: that contain the colums: flex, flex-direction: row, 100% width, margin lef
 cols: 1-12 for sm md lg
 
 */
+
 /* FLEX */
 .makeFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* ROWS */
@@ -27,15 +29,15 @@ cols: 1-12 for sm md lg
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 96%;
   margin: auto 2%;
 }
@@ -54,6 +56,7 @@ cols: 1-12 for sm md lg
 }
 
 /* COLUMNS */
+
 /* SMALL */
 .col-sm-1 {
   width: 8.33%;
@@ -145,46 +148,57 @@ cols: 1-12 for sm md lg
     width: 8.33%;
     padding: 0 10px;
   }
+
   .col-md-2 {
     width: 16.66%;
     padding: 0 10px;
   }
+
   .col-md-3 {
     width: 24.99%;
     padding: 0 10px;
   }
+
   .col-md-4 {
     width: 33.32%;
     padding: 0 10px;
   }
+
   .col-md-5 {
     width: 41.65%;
     padding: 0 10px;
   }
+
   .col-md-6 {
     width: 49.98%;
     padding: 0 10px;
   }
+
   .col-md-7 {
     width: 58.31%;
     padding: 0 10px;
   }
+
   .col-md-8 {
     width: 66.64%;
     padding: 0 10px;
   }
+
   .col-md-9 {
     width: 74.97%;
     padding: 0 10px;
   }
+
   .col-md-10 {
     width: 83.3%;
     padding: 0 10px;
   }
+
   .col-md-11 {
     width: 91.63%;
     padding: 0 10px;
   }
+
   .col-md-12 {
     width: 99.96%;
     padding: 0 10px;
@@ -197,46 +211,57 @@ cols: 1-12 for sm md lg
     width: 8.33%;
     padding: 0 15px;
   }
+
   .col-lg-2 {
     width: 16.66%;
     padding: 0 15px;
   }
+
   .col-lg-3 {
     width: 24.99%;
     padding: 0 15px;
   }
+
   .col-lg-4 {
     width: 33.32%;
     padding: 0 15px;
   }
+
   .col-lg-5 {
     width: 41.65%;
     padding: 0 15px;
   }
+
   .col-lg-6 {
     width: 49.98%;
     padding: 0 15px;
   }
+
   .col-lg-7 {
     width: 58.31%;
     padding: 0 15px;
   }
+
   .col-lg-8 {
     width: 66.64%;
     padding: 0 15px;
   }
+
   .col-lg-9 {
     width: 74.97%;
     padding: 0 15px;
   }
+
   .col-lg-10 {
     width: 83.3%;
     padding: 0 15px;
   }
+
   .col-lg-11 {
     width: 91.63%;
     padding: 0 15px;
   }
+
   .col-lg-12 {
     width: 99.96%;
     padding: 0 15px;
@@ -250,7 +275,7 @@ cols: 1-12 for sm md lg
   margin: 0;
   text-align: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -298,7 +323,7 @@ nav #navRight #linkList ul {
   width: 100%;
   height: 100%;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 nav #navRight #linkList ul li {
@@ -322,7 +347,9 @@ nav #navRight #linkList ul li:nth-child(4)::after {
   margin-left: 15px;
 }
 
-nav #navRight #linkList ul li:nth-child(4), nav #navRight #linkList ul li:nth-child(5), nav #navRight #linkList ul li:nth-child(6) {
+nav #navRight #linkList ul li:nth-child(4),
+nav #navRight #linkList ul li:nth-child(5),
+nav #navRight #linkList ul li:nth-child(6) {
   min-width: 70px;
 }
 
@@ -337,8 +364,8 @@ nav #navRight #burgerIcon {
   position: relative;
   top: 10px;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 @media only screen and (min-width: 720px) {
@@ -380,7 +407,7 @@ main div #insideTopInfo button {
   font-weight: bold;
   font-size: 1.15em;
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-          box-shadow: #a7a7a7 2px 2px 3px;
+  box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
 }
 
@@ -402,8 +429,8 @@ main #howWorks {
   margin-bottom: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main #howWorks h2 {
@@ -420,13 +447,13 @@ main #howWorks p {
 }
 
 main #howItWorksImages {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 main #howItWorksImages div {
   max-width: 1024px;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin: 0;
 }
 
@@ -434,20 +461,20 @@ main #howItWorksImages div {
   main #howItWorksImages div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
 main #howItWorksImages div .howItWorksImages {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 345px;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 main #howItWorksImages div .howItWorksImages img {
@@ -505,7 +532,7 @@ main #everythingUN2K div button {
   font-weight: bold;
   font-size: 1.15em;
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-          box-shadow: #a7a7a7 2px 2px 3px;
+  box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
   padding-left: 40px;
   padding-right: 40px;
@@ -518,19 +545,19 @@ main #everythingUN2K div button:hover {
 
 main #everythingUN2K div div {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   height: 1653px;
   max-width: 950px;
   width: 100%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: auto;
 }
 
 @media only screen and (min-width: 720px) {
   main #everythingUN2K div div {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 }
 
@@ -549,8 +576,8 @@ main #everythingUN2K div div {
 main #everythingUN2K div div .classImgs {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 270px;
   height: 150px;
   margin: auto;
@@ -602,7 +629,7 @@ main #succesStories .insideSuccess {
   max-width: 950px;
   width: 100%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: auto;
 }
 
@@ -646,17 +673,17 @@ main #succesStories .insideSuccess .successContainer .successImg {
   overflow: hidden;
   margin-right: 15px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 main #succesStories .insideSuccess .successContainer .innerSuccess {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 main #succesStories .insideSuccess .successContainer .innerSuccess p {
@@ -682,8 +709,8 @@ main #startLearning {
 main #startLearning div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main #startLearning div .blueButton {
@@ -695,7 +722,7 @@ main #startLearning div .blueButton {
   font-weight: bold;
   font-size: 1.15em;
   -webkit-box-shadow: #a7a7a7 2px 2px 3px;
-          box-shadow: #a7a7a7 2px 2px 3px;
+  box-shadow: #a7a7a7 2px 2px 3px;
   margin-bottom: 80px;
 }
 
@@ -741,7 +768,7 @@ footer .row {
 
 footer .row #icons {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 720px) {
@@ -761,11 +788,11 @@ footer .row #footerLinks div {
   width: 50%;
   height: 100%;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 20px 0;
 }
 
@@ -794,4 +821,3 @@ footer .row #footerLinks div a:nth-child(3) {
     padding: 75px 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
