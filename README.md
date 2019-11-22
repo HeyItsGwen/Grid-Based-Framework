@@ -69,6 +69,5 @@ OUR GITHUB PROFILES
 * Ara Camarillo - [Link](https://github.com/aracelicaes)
 
 OUR LINKEDIN PROFILES
-* Ara Camarillo - [Link](https://www.linkedin.com/in/ara-camarillo-7297799b/
-)
+* Ara Camarillo - [Link](https://www.linkedin.com/in/ara-camarillo-7297799b/)
 * Gwen Hey - [Link](https://www.linkedin.com/in/gwen-hey-642109191/)
