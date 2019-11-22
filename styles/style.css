@@ -1,3 +1,13 @@
+/* GRID SYSTEM PLAN */
+/*
+
+flex class: display: flex
+
+Rows: that contain the colums: flex, flex-direction: row, 100% width, margin left/right: 5%
+
+cols: 1-12 for sm md lg
+
+*/
 /* FLEX */
 .makeFlex {
   display: -webkit-box;
@@ -426,9 +436,6 @@ main #howItWorksImages div {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: space-around;
-        -ms-flex-align: space-around;
-            align-items: space-around;
   }
 }
 
